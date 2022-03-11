@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eustace Dike | Web Developer</title>
+	
+	<!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+</head>
+<body>
+	<!-- Navbar -->
+    <nav>
+        <h1>EUSTACE  <span class="portfolio">  Portfolio</span></h1>
+        <ul class="navigation">
+          <li><a href="#about" class="nav-link"><i class="fa fa-user"></i> ABOUT</a></li>
+          <li><a href="#skills" class="nav-link"><i class="fa fa-cog"></i> SKILLS</a></li>
+          <li><a href="#projects" class="nav-link"><i class="fa fa-th"></i> PROJECTS</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fa fa-envelope"></i> CONTACT</a></li>
+        </ul>
+        <span class="navButton"  style="display:none">
+            <div class="menu" id="menu" onclick="menu(this); sideBar()">
+                <div class="bar1" id="bar1"></div>
+                <div class="bar2" id="bar2"></div>
+                <div class="bar3" id="bar3"></div>
+            </div>
+            </span> 
+    </nav>
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="barBlock animateLeft" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="menu(document.getElementById('menu')); sideBar()" style="color: red !important"><h2 class="only"><i class="fa fa-window-close"></i></h2></a>
+    <a href="#about" onclick="menu(document.getElementById('menu')); sideBar()"><h2><i class="fa fa-user"></i>  ABOUT</h2></a>
+    <a href="#skills" onclick="menu(document.getElementById('menu')); sideBar()"><h2><i class="fa fa-cog"></i>  SKILLS</h2></a>
+    <a href="#projects" onclick="menu(document.getElementById('menu')); sideBar()"><h2><i class="fa fa-th"></i>  PROJECTS</h2></a>
+    <a href="#contact" onclick="menu(document.getElementById('menu')); sideBar()"><h2><i class="fa fa-envelope"></i>  CONTACT</h2></a>
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="about">
+      <img class="heroimg"
+        src="assets/images/hero2.jpg"
+        alt="Eustace Dike"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="closeAbout" onclick="closeMe()">
+        <h4 onclick="" style="color: #fff !important; background-color: red;">&#10006</h4>
+      </div>
+      <div class="more-modal animate__animated animate__rubberBand">
+        <h2><img src="assets/images/avatarnav.jpg" alt="Avatar" class="avatar">
+          ABOUT ME</h2>
+          <p>
+            Hi there, my name is <b>Eustace Dike</b> and I'm from Imo, Nigeria. I have always had a passion for working on the computer as far back
+              as I could remember. I studied Microbiology in the higher institution but that has not deterred my love for working on a computer.
+              I decided to fuse my passion and career and this required acquiring a knowledge in programming. The journey has started but it 
+              has not ended... So far so good, it's been a good one.
+          </p>
+      </div>
+      <div class="bio animate__animated animate__shakeX">
+       
+        <h3 class="bio-title" onclick="aboutMe()">About Me</h3>
+      </div>
+</section>
+
+
+    <!-- More about -->
+
+    <section class="more-about">
+      <h2><img src="assets/images/avatar.jpg" alt="Avatar" class="avatar">
+      ABOUT ME</h2>
+      <p>
+        Hi there, my name is <b>Eustace Dike</b> and I'm from Imo, Nigeria. I have always had a passion for working on a computer as far back
+          as I couid remember. I studied Microbiology in the higher institution but that has not deterred my love for working on a computer.
+          I decided to fuse my passion and career and this required acquiring a knowledge in programming. The journey has started but it 
+          has not ended... So far so good, it's been a good one.
+      </p>
+      <p>
+        
+      </p>
+    </section>
+
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">MY SKILLS</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-html-5.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-css3.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-javascript.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <!-- <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-bootstrap.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-react-native.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-git.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div> -->
+      </div>
+    </section>
+
+
+    <!-- Projects section -->
+
+    <section class="projects" id="projects">
+      <h2 class="projects-title">MY RECENT PROJECTS</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/expenseTracker.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Expense Tracker</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/netflixClone.png"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Netflix Clone</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/greenyEarth.png"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Greeny Earth</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact section -->
+
+    <section class="contact" id="contact">
+      <h2>SEND ME A MESSAGE</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="https://web.facebook.com/eustace.dike" target="_blank"
+        ><img
+          src="assets/icons/icons8-facebook.png"
+          alt="Facebook"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://twitter.com/eustace_dike" target="_blank"
+        ><img
+          src="assets/icons/icons8-twitter.png"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://wa.link/axlni2" target="_blank"
+        ><img
+          src="assets/icons/icons8-whatsapp.png"
+          alt="WhatsApp"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/eustacedike" target="_blank"
+        ><img src="assets/icons/icons8-github.png"
+        style="background-color: #fff; border-radius: 50%;"
+        alt="Github" class="socicon"
+      /></a>
+      </div>
+
+    <!-- Scroll to top -->
+
+    <!-- Footer section -->
+    
+    <footer>
+      <p class="copy">&copy; Copyright 2022 by
+        <a href="https://twitter.com/eustace_dike" target="_blank">
+          Eustace Dike (Ace)</a></p>
+      
+</footer>
+
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+    <!-- Ion icons scripts -->
+    
+
+</body>
+</html>
